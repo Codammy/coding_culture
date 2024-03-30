@@ -26,7 +26,6 @@ div{
     border-radius: -10px;
 }
 h1 {
-    /* letter-spacing: 10px; */
     font-size: 0;
     text-transform: uppercase;
     animation: glow 3s ease-in-out infinite;
@@ -249,5 +248,14 @@ h1 {
     100% {
         text-shadow: 1px 1px 0px #0005ff;
     word-spacing: -100px;
+    }
+}
+
+@media (max-width: 800px) {
+    div:nth-child(even) {
+        display: none;
+    }
+    h1{
+        padding: 10px;
     }
 }
