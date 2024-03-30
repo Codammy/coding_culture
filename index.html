@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>mystery</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <section class="boxes">
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+    </section>
+    <section class="mystery">
+      <h1 class="text">
+        <span>
+          <span class="c1">C</span>
+          <span class="c2">o</span>
+          <span class="c3">d</span>
+          <span class="c4">i</span>
+          <span class="c5">n</span>
+          <span class="c6">g</span>
+        </span>
+        <span class="c7">-</span>
+        <span>
+          <span class="c8">C</span>
+          <span class="c9">u</span>
+          <span class="c10">l</span>
+          <span class="c11">t</span>
+          <span class="c12">u</span>
+          <span class="c13">r</span>
+          <span class="c14">e</span>
+        </span>
+      </h1>
+    </section>
+    <script>
+      const h = document.getElementsByTagName("h1")[0];
+      const stars = document.getElementsByTagName("div");
+      console.log(stars.length);
+      for (let i = 0; i < stars.length; i++) {
+        stars[i].style.top = `${Math.random() * 100}%`;
+        stars[i].style.left = `${Math.random() * 100}%`;
+        stars[i].style.right = `${Math.random() * 100}%`;
+        stars[i].style.bottom = `${Math.random() * 100}%`;
+        stars[i].style.background = `rgb(${Math.random() * 255}, ${
+          Math.random() * 255
+        }, ${Math.random() * 255} )`;
+      }
+
+      let state = "running";
+      document.body.addEventListener("click", () => {
+        if (state === "running") {
+          h.style.animationPlayState = "paused";
+          state = "paused";
+        } else {
+          h.style.animationPlayState = "running";
+          state = "running";
+        }
+      });
+    </script>
+  </body>
+</html>

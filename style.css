@@ -1,0 +1,253 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    background-color: black;
+}
+.mystery {
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 999;
+    background-color: rgba(0, 0, 0, 0.65);
+    height: 100vh;
+    width: 100%;
+    position: fixed;
+    backdrop-filter: 100deg;
+}
+
+div{
+    width: 100px;
+    height: 100px;
+    position: fixed;
+    border-radius: -10px;
+}
+h1 {
+    /* letter-spacing: 10px; */
+    font-size: 0;
+    text-transform: uppercase;
+    animation: glow 3s ease-in-out infinite;
+    animation-delay: 4s;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    letter-spacing: 20px;
+    text-shadow: 2px 1px 2px #04040a;
+    text-align: center;
+}
+.c1 {
+    animation: c1 500ms ease-in calc(1);
+    animation-fill-mode: forwards;
+}
+.c2 {
+    animation: c2 500ms ease-in calc(1);
+    animation-delay: .5s;
+    animation-fill-mode: forwards;
+}
+.c3 {
+    animation: c3 500ms ease-in calc(1);
+    animation-delay: .7s;
+    animation-fill-mode: forwards;
+}
+.c4 {
+    animation: c4 500ms ease-in calc(1);
+    animation-delay: .9s;
+    animation-fill-mode: forwards;
+}
+.c5 {
+    animation: c5 500ms ease-in calc(1);
+    animation-delay: 1s;
+    animation-fill-mode: forwards;
+}
+.c6 {
+    animation: c6 500ms ease-in calc(1);
+    animation-delay: 1.3s;
+    animation-fill-mode: forwards;
+}
+.c7 {
+    animation: c7 100ms ease-in calc(1);
+    animation-delay: 4s;
+    animation-fill-mode: forwards;
+
+}
+.c8 {
+    animation: c8 500ms ease-in calc(1);
+    animation-delay: 1.7s;
+    animation-fill-mode: forwards;
+
+}
+.c9 {
+    animation: c9 500ms ease-in calc(1);
+    animation-delay: 1.9s;
+    animation-fill-mode: forwards;
+
+}
+.c10 {
+    animation: c10 500ms ease-in calc(1);
+    animation-delay: 2.1s;
+    animation-fill-mode: forwards;
+
+}
+.c11 {
+    animation: c11 500ms ease-in calc(1);
+    animation-delay: 2.3s;
+    animation-fill-mode: forwards;
+
+}
+.c12 {
+    animation: c12 500ms ease-in calc(1);
+    animation-delay: 2.5s;
+    animation-fill-mode: forwards;
+
+}
+.c13 {
+    animation: c13 500ms ease-in calc(1);
+    animation-delay: 2.7s;
+    animation-fill-mode: forwards;
+
+}
+.c14 {
+    animation: c14 500ms ease-in calc(1);
+    animation-delay: 2.9s;
+    animation-fill-mode: forwards;
+
+}
+@keyframes c1 {
+    from{
+        font-size: 0;
+    }
+    to {
+    font-size: 90px;
+    }
+}
+@keyframes c2 {
+    from{
+        font-size: 0;
+    }
+    to {
+        font-size: 90px;
+        }
+}
+@keyframes c3 {
+    from{
+        font-size: 0;
+    }
+    to {
+        font-size: 90px;
+        }
+}
+@keyframes c4 {
+    from{
+        font-size: 0;
+    }
+    to {
+        font-size: 90px;
+        }
+}
+@keyframes c5 {
+    from{
+        font-size: 0;
+    }
+    to {
+        font-size: 90px;
+        }
+}
+@keyframes c6 {
+    from{
+        font-size: 0;
+    }
+    to {
+        font-size: 90px;
+        }
+}
+@keyframes c7 {
+    from{
+        font-size: 0;
+    }
+    to {
+        font-size: 90px;
+        }
+}
+@keyframes c8 {
+    from{
+        font-size: 0;
+    }
+    to {
+        font-size: 90px;
+        }
+}
+@keyframes c9 {
+    from{
+        font-size: 0;
+    }
+    to {
+        font-size: 90px;
+        }
+}
+@keyframes c10 {
+    from{
+        font-size: 0;
+    }
+    to {
+        font-size: 90px;
+        }
+}
+@keyframes c11 {
+    from{
+        font-size: 0;
+    }
+    to {
+        font-size: 90px;
+        }
+}
+@keyframes c12 {
+    from{
+        font-size: 0;
+    }
+    to {
+        font-size: 90px;
+        }
+}
+@keyframes c13 {
+    from{
+        font-size: 0;
+    }
+    to {
+        font-size: 90px;
+        }
+}
+@keyframes c14 {
+    from{
+        font-size: 0;
+    }
+    to {
+        font-size: 90px;
+        }
+}
+@keyframes glow {
+    0% {
+        text-shadow: 1px 1px 5px #0005ff;
+    word-spacing: -100px;
+    /* word-spacing: normal; */
+
+    }
+    25% {
+        text-shadow: 5px 10px 15px #0005ff;
+    word-spacing: -100px;
+
+    }
+    50% {
+        text-shadow: -8px -8px 15px #0005ff;
+    word-spacing: -100px;
+    }
+    75% {
+        text-shadow: 1px 1px 40px #0005ff;
+    word-spacing: -100px;
+
+    }
+    100% {
+        text-shadow: 1px 1px 0px #0005ff;
+    word-spacing: -100px;
+    }
+}
